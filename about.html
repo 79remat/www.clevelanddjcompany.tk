@@ -46,7 +46,7 @@
     <!-- Start Custom CSS -->
       <style>
         #home-logo {
-          content:url("images/uploads/logos/home-logo.png");
+          content:url("images/uploads/logos/home-logo-white.png");
         }
         @media only screen and (max-width:1200px) {
           #home-logo {
@@ -65,20 +65,24 @@
         }
 
 
-        #home-bg {
-          background-image: url('images/uploads/about-bg');
-          background-size:contain;
+        #about-bg {
+          background-image: url('images/uploads/about-bg.jpg');
+          background-attachment: fixed;
+          position:relative;
+          background-position: center;
           background-repeat: no-repeat;
-          height:300px;
-          margin:10em auto 4em auto;
+          background-size: cover;
+          min-height: 600px;
         }
-        @media only screen and (max-width:980px) {
-          #home-bg {
-            background-image: url('images/uploads/logos/about-bg.jpg');
-            background-size: contain;
+        @media only screen and (max-width:749px) {
+          #about-bg {
+            background-image: url('images/uploads/about-bg.jpg');
+            background-attachment: inherit;
+            position:relative;
+            background-position: center;
             background-repeat: no-repeat;
-            height:300px;
-            margin:15em auto -10em auto;
+            background-size: cover;
+            min-height: 600px;
           }
         }
 
@@ -143,33 +147,33 @@
           <div class="collapse navbar-collapse" id="navbarsExample05">
             <ul text-align="center" class="navbar-nav ml-auto pl-md-5">
               <li class="nav-item">
-                <a class="nav-link active" href="https://www.clevelanddjcompany.tk" style="color:#4e5961"><u>Home</u></a>
+                <a class="nav-link" href="https://www.clevelanddjcompany.tk">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/about" style="color:#4e5961">About</a>
+                <a class="nav-link active" href="/about"><u>About</u></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/our-djs" style="color:#4e5961">Our Team</a>
+                <a class="nav-link" href="/our-djs">Our Team</a>
               </li>
                <li class="nav-item">
-                <a class="nav-link" href="/pricing" style="color:#4e5961">Pricing</a>
+                <a class="nav-link" href="/pricing">Pricing</a>
               </li>
 	            <li class="nav-item">
-                <a class="nav-link" href="/weddings" style="color:#4e5961">Weddings</a>
+                <a class="nav-link" href="/weddings">Weddings</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/events" style="color:#4e5961">Events</a>
+                <a class="nav-link" href="/events">Events</a>
               </li>
 	            <!--
                 <li class="nav-item">
-                  <a class="nav-link" href="/our-mixes" style="color:#4e5961">Mixes</a>
+                  <a class="nav-link" href="/our-mixes">Mixes</a>
                 </li>
               -->
               <li class="nav-item">
-                <a class="nav-link" href="/clients" style="color:#4e5961">Clients</a>
+                <a class="nav-link" href="/clients">Clients</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/contact-us" style="color:#4e5961">Contact</a>
+                <a class="nav-link" href="/contact-us">Contact</a>
               </li>
             </ul>            
           </div>
@@ -185,11 +189,11 @@
             <span style="font-size:30px;color:#FF0000;" class="fa fa-youtube-play"></span>
           </a>
           
-          <a title="Cleveland DJ Company Facebook" href="https://www.facebook.com/Clevelanddjco/" target="_blank" class="p-2">
+          <a title="Cleveland DJ Company Facebook" href="https://www.facebook.com/clevelanddjco/" target="_blank" class="p-2">
             <span style="font-size:30px;color:#4267B2;" class="fa fa-facebook"></span>
           </a>
             
-          <a title="Cleveland DJ Company Instagram" href="https://www.instagram.com/Clevelanddjco/" target="_blank" class="p-2">
+          <a title="Cleveland DJ Company Instagram" href="https://www.instagram.com/clevelanddjco/" target="_blank" class="p-2">
             <span style="font-size:30px;color: transparent;
               background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
               background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -203,131 +207,66 @@
     <!-- END header -->
     
     <section>
-      <div>
-        <div style="width:50%" id="home-bg"></div>    
-      </div>
-    </section>
-    
-    <section class="home-slider inner-page owl-carousel">
-      <div class="slider-item" style="background-image: url('images/slider-1.jpg');">
+      <div id="about-bg" >
+        <div style="text-align:center">
+          <br /><br /><br /><br /><br /><br />
+          <h1><font weight="lighter" size="24pt" color="white">ABOUT US</font></h1>
+         
+          <br/>
+          <font color="white"><div style="font-size:18pt;display:inline-block;width:66%">We started this company with one goal in mind....To provide Erie with the best DJs that mix the best music at a reasonable price! Contact us today so we can provide you with a custom price quote for your event and show you what separates us from all the rest!</div></font>
         
-        <div class="container">
-          <div class="row slider-text align-items-center justify-content-center">
-            <div class="col-md-8 text-center col-sm-12 element-animate">
-              <h1>About Us</h1>
-              <p class="mb-5 sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
-              <p><a href="#" class="btn btn-white btn-outline-white px-4 py-3">Explore</a></p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- END slider -->
-  
-    <section>
-      <div class="half d-lg-flex d-block">
-        <div class="image" style="background-image: url('images/slider-1.jpg')"></div>
-        <div class="text text-center element-animate">
-          <h3 class="mb-4">Our Mission</h3>
-          <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis tempora inventore, aliquam ratione. Eum vero sapiente tempora eveniet perspiciatis libero, omnis quae facilis! Voluptatibus minima autem, esse eius natus labore.</p>
-          <p><a href="#" class="btn btn-primary btn-sm px-3 py-2">Learn More</a></p>
-        </div>
-      </div>
-
-      <div class="half d-lg-flex d-block">
-        <div class="image order-2" style="background-image: url('images/slider-2.jpg')"></div>
-        <div class="text text-center element-animate">
-          <h3 class="mb-4">Company History</h3>
-          <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis tempora inventore, aliquam ratione. Eum vero sapiente tempora eveniet perspiciatis libero, omnis quae facilis! Voluptatibus minima autem, esse eius natus labore.</p>
-          
-          <p><a href="#" class="btn btn-primary btn-sm px-3 py-2">Learn More</a></p>
-        </div>
-      </div>
-
-    </section>
-
-    <section class="section element-animate">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="media block-6 d-block text-center">
-              <div class="icon mb-3"><span class="ion-ios-bell-outline"></span></div>
-              <div class="media-body">
-                <h3 class="heading">Modern Design</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>  
-
-          </div>
-          <div class="col-md-6 col-lg-4 ">
-            <div class="media block-6 d-block text-center">
-              <div class="icon mb-3"><span class="ion-ios-heart-outline"></span></div>
-              <div class="media-body">
-                <h3 class="heading">Build With Love</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div> 
-
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="media block-6 d-block text-center">
-              <div class="icon mb-3"><span class="ion-ios-bolt-outline"></span></div>
-              <div class="media-body">
-                <h3 class="heading">Fast Loading</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div> 
-
-          </div>
         </div>
       </div>
     </section>
-
-    
+     
     
     <section class="section bg-light">
       <div class="container">
         <div class="row justify-content-center mb-5 element-animate">
           <div class="col-md-8 text-center">
-            <h2 class="heading mb-4">Meet The Team</h2>
-            <p class="mb-5 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+            <h2 class="heading mb-4">How Do We Whoose Our DJs?</h2>
+            <p class="mb-5 lead">The criteria for being a DJ on our team is very strict. We only pick the best local DJs and they must be able to rock a dance floor nightclub style, while staying true to the client's requests. All of our award winning DJs have professional experience at weddings and events of all types!</p>
           </div>
         </div>
         <div class="row element-animate block-11">
-          <div class="nonloop-block-11 owl-carousel">
+          <div style="margin-top:-75px;" class="nonloop-block-11 owl-carousel">
+            
             <div>
               <div class="media d-block media-custom text-center">
-                <a href="adoption-single.html"><img src="images/person_1.jpg" alt="Image Placeholder" class="img-fluid"></a>
+                <a href="/our-djs#DJ-Tam"><img src="images/uploads/dj-tam-tile.jpg" alt="Cleveland Wedding DJ" class="img-fluid"></a>
                 <div class="media-body">
-                  <h3 class="mt-0 text-black">Mellisa Howard</h3>
+                  <h3 class="mt-0 text-black">DJ Tam</h3>
                 </div>
               </div>
             </div>
+			      
             <div>
               <div class="media d-block media-custom text-center">
-                <a href="adoption-single.html"><img src="images/person_2.jpg" alt="Image Placeholder" class="img-fluid"></a>
+                <a href="/our-djs#DJ-Mike-Maxx"><img height="auto" src="images/uploads/dj-mike-maxx-tile.jpg" alt="Cleveland DJ Company Wedding Near Me" class="img-fluid"></a>
                 <div class="media-body">
-                  <h3 class="mt-0 text-black">Mike Richardson</h3>
+                  <h3 class="mt-0 text-black">DJ Mike Maxx</h3>
                 </div>
               </div>
             </div>
+            
             <div>
               <div class="media d-block media-custom text-center">
-                <a href="adoption-single.html"><img src="images/person_3.jpg" alt="Image Placeholder" class="img-fluid"></a>
+                <a href="/our-djs#DJ-Matt-Medley"><img src="images/uploads/dj-matt-medley-tile.jpg" alt="Cleveland DJ Company Wedding Near Me" class="img-fluid"></a>
                 <div class="media-body">
-                  <h3 class="mt-0 text-black">Charles White</h3>
+                  <h3 class="mt-0 text-black">DJ Matt Medley</h3>
                 </div>
               </div>
             </div>
+            
             <div>
               <div class="media d-block media-custom text-center">
-                <a href="adoption-single.html"><img src="images/person_4.jpg" alt="Image Placeholder" class="img-fluid"></a>
+                <a href="/our-djs#DJ-Coop"><img src="images/uploads/dj-coop-tile.jpg" alt="Cleveland DJ Company Wedding Near Me" class="img-fluid"></a>
                 <div class="media-body">
-                  <h3 class="mt-0 text-black">Laura Smith</h3>
+                  <h3 class="mt-0 text-black">DJ Coop</h3>
                 </div>
               </div>
             </div>
+
           </div>
           <!-- END slider -->
         </div>
