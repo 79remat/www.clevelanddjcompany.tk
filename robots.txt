@@ -1,4 +1,4 @@
 
 User-agent: *
 Disallow: 
-Sitemap: https://www.clevelanddjcompany.com/sitemap.xml
+Sitemap: https://www.clevelanddjcompany.tk/sitemap.xml
